@@ -4,12 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Team — CCN London</title>
-  <meta name="description" content="Meet the CCN London team — directors, engagement managers and consultants from LSE, Imperial, UCL and King's College London.">
-  <meta property="og:title" content="Team — CCN London">
-  <meta property="og:description" content="Meet the talented team behind CCN London's consulting engagements.">
-  <meta property="og:type" content="website">
-  <meta name="twitter:card" content="summary">
-  <meta name="twitter:title" content="Team — CCN London">
+  <meta name="description" content="Meet the CCN London team — our organising committee and Spring 2026 consulting teams.">
   <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
@@ -55,150 +50,129 @@
     <section class="page-header">
       <div class="container">
         <h1 class="page-header__title">Our <span class="text-cyan">Team</span></h1>
-        <p class="page-header__subtitle">Meet the talented individuals behind CCN London's consulting engagements.</p>
+        <p class="page-header__subtitle">Meet the CCN London team — our 2025/2026 organising committee and consulting teams.</p>
       </div>
     </section>
 
-    <section class="section" aria-label="Team members">
+    <section class="section" aria-label="Team members" style="padding: var(--space-2xl) 0;">
       <div class="container">
-        <!-- Filters -->
-        <div class="team__filters" role="tablist" aria-label="Filter team members">
-          <button class="team__filter-btn team__filter-btn--active" data-filter="all" role="tab" aria-selected="true">All</button>
-          <button class="team__filter-btn" data-filter="director" role="tab" aria-selected="false">Directors</button>
-          <button class="team__filter-btn" data-filter="manager" role="tab" aria-selected="false">Engagement Managers</button>
-          <button class="team__filter-btn" data-filter="consultant" role="tab" aria-selected="false">Consultants</button>
+
+        <div class="team__filters">
+          <button class="team__tab team__tab--active" data-tab="committee">Committee</button>
+          <button class="team__tab" data-tab="consultants">Consultants</button>
         </div>
 
-        <!-- Team Grid -->
-        <div class="team__grid" role="tabpanel">
+        <!-- ═══════════ COMMITTEE ═══════════ -->
+        <div class="team__panel" id="panel-committee">
+          <h2 class="text-cyan mb-xl" style="text-align:center;">2025/2026 Committee</h2>
 
-          <div class="team-card reveal" data-role="director">
-            <img src="assets/img/placeholder-headshot.svg" alt="Portrait of James Chen" class="team-card__photo" width="80" height="80">
-            <h3 class="team-card__name">James Chen</h3>
-            <p class="team-card__role">Project Director</p>
-            <p class="team-card__university">LSE — Economics</p>
-            <a href="#" class="team-card__linkedin" aria-label="James Chen's LinkedIn profile">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="18" height="18"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-4 0v7h-4v-7a6 6 0 0 1 6-6z"></path><rect x="2" y="9" width="4" height="12"></rect><circle cx="4" cy="4" r="2"></circle></svg>
-            </a>
+          <h3 class="team__section-title">President</h3>
+          <div class="team__grid">
+            <div class="team-card" data-linkedin="https://www.linkedin.com/in/richard-min/">
+              <img src="assets/img/RichardMin.PNG" alt="" class="team-card__photo" width="100" height="100">
+              <h3 class="team-card__name">Richard Min</h3>
+              <p class="team-card__role">President</p>
+            </div>
           </div>
 
-          <div class="team-card reveal reveal--delay-1" data-role="director">
-            <img src="assets/img/placeholder-headshot.svg" alt="Portrait of Priya Sharma" class="team-card__photo" width="80" height="80">
-            <h3 class="team-card__name">Priya Sharma</h3>
-            <p class="team-card__role">Deputy Director</p>
-            <p class="team-card__university">Imperial — Management</p>
-            <a href="#" class="team-card__linkedin" aria-label="Priya Sharma's LinkedIn profile">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="18" height="18"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-4 0v7h-4v-7a6 6 0 0 1 6-6z"></path><rect x="2" y="9" width="4" height="12"></rect><circle cx="4" cy="4" r="2"></circle></svg>
-            </a>
+          <h3 class="team__section-title">Vice Presidents</h3>
+          <div class="team__grid">
+            <div class="team-card" data-linkedin="https://www.linkedin.com/in/rexheng/">
+              <img src="assets/img/placeholder-headshot.png" alt="" class="team-card__photo" width="100" height="100">
+              <h3 class="team-card__name">Rex Heng</h3>
+              <p class="team-card__role">Vice President</p>
+              <p class="team-card__team">Client Acquisition</p>
+            </div>
+            <div class="team-card" data-linkedin="https://www.linkedin.com/in/namon-tewinpagti/">
+              <img src="assets/img/placeholder-headshot.png" alt="" class="team-card__photo" width="100" height="100">
+              <h3 class="team-card__name">Namon (Bam) Tewinpagti</h3>
+              <p class="team-card__role">Vice President</p>
+              <p class="team-card__team">Recruitment &amp; Marketing</p>
+            </div>
+            <div class="team-card" data-linkedin="https://www.linkedin.com/in/chinraygoh/">
+              <img src="assets/img/placeholder-headshot.png" alt="" class="team-card__photo" width="100" height="100">
+              <h3 class="team-card__name">Goh Chin Ray</h3>
+              <p class="team-card__role">Vice President</p>
+              <p class="team-card__team">External Affairs</p>
+            </div>
+            <div class="team-card" data-linkedin="https://www.linkedin.com/in/rohansubagaran/">
+              <img src="assets/img/placeholder-headshot.png" alt="" class="team-card__photo" width="100" height="100">
+              <h3 class="team-card__name">Rohan Subagaran</h3>
+              <p class="team-card__role">Vice President</p>
+              <p class="team-card__team">Events</p>
+            </div>
           </div>
 
-          <div class="team-card reveal reveal--delay-2" data-role="manager">
-            <img src="assets/img/placeholder-headshot.svg" alt="Portrait of Oliver Wright" class="team-card__photo" width="80" height="80">
-            <h3 class="team-card__name">Oliver Wright</h3>
-            <p class="team-card__role">Engagement Manager</p>
-            <p class="team-card__university">UCL — Finance</p>
-            <a href="#" class="team-card__linkedin" aria-label="Oliver Wright's LinkedIn profile">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="18" height="18"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-4 0v7h-4v-7a6 6 0 0 1 6-6z"></path><rect x="2" y="9" width="4" height="12"></rect><circle cx="4" cy="4" r="2"></circle></svg>
-            </a>
+          <h3 class="team__section-title">Associates</h3>
+          <div class="team__grid">
+            <div class="team-card" data-linkedin="https://www.linkedin.com/in/ally-c-53313924b/"><img src="assets/img/placeholder-headshot.png" alt="" class="team-card__photo" width="100" height="100"><h3 class="team-card__name">Ally Candra</h3><p class="team-card__role">Associate</p><p class="team-card__team">Client Acquisition</p></div>
+            <div class="team-card" data-linkedin="https://www.linkedin.com/in/yp-ivan-t/"><img src="assets/img/placeholder-headshot.png" alt="" class="team-card__photo" width="100" height="100"><h3 class="team-card__name">Ivan Tan</h3><p class="team-card__role">Associate</p><p class="team-card__team">Client Acquisition</p></div>
+            <div class="team-card" data-linkedin="https://www.linkedin.com/in/jasmine-saxena-a06812303/"><img src="assets/img/placeholder-headshot.png" alt="" class="team-card__photo" width="100" height="100"><h3 class="team-card__name">Jasmine Saxena</h3><p class="team-card__role">Associate</p><p class="team-card__team">Recruitment &amp; Marketing</p></div>
+            <div class="team-card" data-linkedin="https://www.linkedin.com/in/tsz-yiu-lai/"><img src="assets/img/placeholder-headshot.png" alt="" class="team-card__photo" width="100" height="100"><h3 class="team-card__name">Anke Lai</h3><p class="team-card__role">Associate</p><p class="team-card__team">Recruitment &amp; Marketing</p></div>
+            <div class="team-card" data-linkedin="https://www.linkedin.com/in/nicholasdao2005/"><img src="assets/img/placeholder-headshot.png" alt="" class="team-card__photo" width="100" height="100"><h3 class="team-card__name">Nicholas Dao</h3><p class="team-card__role">Associate</p><p class="team-card__team">External Affairs</p></div>
+            <div class="team-card" data-linkedin="https://www.linkedin.com/in/kamilla-tleuova-993811194/"><img src="assets/img/placeholder-headshot.png" alt="" class="team-card__photo" width="100" height="100"><h3 class="team-card__name">Kamilla Tleuova</h3><p class="team-card__role">Associate</p><p class="team-card__team">External Affairs</p></div>
+            <div class="team-card" data-linkedin="https://www.linkedin.com/in/emmaruthoh/"><img src="assets/img/placeholder-headshot.png" alt="" class="team-card__photo" width="100" height="100"><h3 class="team-card__name">Emma-Ruth Oh</h3><p class="team-card__role">Associate</p><p class="team-card__team">Events</p></div>
+          </div>
+        </div>
+
+        <!-- ═══════════ CONSULTANTS — Spring 2026 ═══════════ -->
+        <div class="team__panel" id="panel-consultants" style="display:none;">
+
+          <h2 class="text-cyan mb-xl" style="text-align:center;">Spring 2026 Cycle</h2>
+
+          <h3 class="team__section-title">Avigen</h3>
+          <div class="team__grid team__grid--5col">
+            <div class="team-card" data-linkedin="#"><img src="assets/img/placeholder-headshot.png" alt="" class="team-card__photo" width="100" height="100"><h3 class="team-card__name">Justin Cheng</h3><p class="team-card__role">Engagement Manager</p><p class="team-card__team">Avigen</p></div>
+            <div class="team-card" data-linkedin="#"><img src="assets/img/placeholder-headshot.png" alt="" class="team-card__photo" width="100" height="100"><h3 class="team-card__name">Wen Wei Lee</h3><p class="team-card__role">Deputy EM</p><p class="team-card__team">Avigen</p></div>
+            <div class="team-card" data-linkedin="#"><img src="assets/img/placeholder-headshot.png" alt="" class="team-card__photo" width="100" height="100"><h3 class="team-card__name">Belove Shah</h3><p class="team-card__role">Consultant</p><p class="team-card__team">Avigen</p></div>
+            <div class="team-card" data-linkedin="#"><img src="assets/img/placeholder-headshot.png" alt="" class="team-card__photo" width="100" height="100"><h3 class="team-card__name">Wai Lok (Isaac) Law</h3><p class="team-card__role">Consultant</p><p class="team-card__team">Avigen</p></div>
+            <div class="team-card" data-linkedin="#"><img src="assets/img/placeholder-headshot.png" alt="" class="team-card__photo" width="100" height="100"><h3 class="team-card__name">Zoey Zhang</h3><p class="team-card__role">Consultant</p><p class="team-card__team">Avigen</p></div>
           </div>
 
-          <div class="team-card reveal reveal--delay-3" data-role="manager">
-            <img src="assets/img/placeholder-headshot.svg" alt="Portrait of Sofia Martinez" class="team-card__photo" width="80" height="80">
-            <h3 class="team-card__name">Sofia Martinez</h3>
-            <p class="team-card__role">Engagement Manager</p>
-            <p class="team-card__university">LSE — International Relations</p>
-            <a href="#" class="team-card__linkedin" aria-label="Sofia Martinez's LinkedIn profile">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="18" height="18"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-4 0v7h-4v-7a6 6 0 0 1 6-6z"></path><rect x="2" y="9" width="4" height="12"></rect><circle cx="4" cy="4" r="2"></circle></svg>
-            </a>
+          <h3 class="team__section-title">Blackfriars Settlement</h3>
+          <div class="team__grid team__grid--5col">
+            <div class="team-card" data-linkedin="#"><img src="assets/img/placeholder-headshot.png" alt="" class="team-card__photo" width="100" height="100"><h3 class="team-card__name">Sarah Ahamed</h3><p class="team-card__role">Engagement Manager</p><p class="team-card__team">Blackfriars Settlement</p></div>
+            <div class="team-card" data-linkedin="#"><img src="assets/img/placeholder-headshot.png" alt="" class="team-card__photo" width="100" height="100"><h3 class="team-card__name">Muthu Ramanathan</h3><p class="team-card__role">Deputy EM</p><p class="team-card__team">Blackfriars Settlement</p></div>
+            <div class="team-card" data-linkedin="#"><img src="assets/img/placeholder-headshot.png" alt="" class="team-card__photo" width="100" height="100"><h3 class="team-card__name">Zaim Chattha</h3><p class="team-card__role">Consultant</p><p class="team-card__team">Blackfriars Settlement</p></div>
+            <div class="team-card" data-linkedin="#"><img src="assets/img/placeholder-headshot.png" alt="" class="team-card__photo" width="100" height="100"><h3 class="team-card__name">Xin Nee Yee</h3><p class="team-card__role">Consultant</p><p class="team-card__team">Blackfriars Settlement</p></div>
+            <div class="team-card" data-linkedin="#"><img src="assets/img/placeholder-headshot.png" alt="" class="team-card__photo" width="100" height="100"><h3 class="team-card__name">Rumaisa Ali</h3><p class="team-card__role">Consultant</p><p class="team-card__team">Blackfriars Settlement</p></div>
           </div>
 
-          <div class="team-card reveal" data-role="manager">
-            <img src="assets/img/placeholder-headshot.svg" alt="Portrait of Aiden Park" class="team-card__photo" width="80" height="80">
-            <h3 class="team-card__name">Aiden Park</h3>
-            <p class="team-card__role">Engagement Manager</p>
-            <p class="team-card__university">King's — Business Management</p>
-            <a href="#" class="team-card__linkedin" aria-label="Aiden Park's LinkedIn profile">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="18" height="18"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-4 0v7h-4v-7a6 6 0 0 1 6-6z"></path><rect x="2" y="9" width="4" height="12"></rect><circle cx="4" cy="4" r="2"></circle></svg>
-            </a>
+          <h3 class="team__section-title">NU Insights</h3>
+          <div class="team__grid team__grid--5col">
+            <div class="team-card" data-linkedin="#"><img src="assets/img/placeholder-headshot.png" alt="" class="team-card__photo" width="100" height="100"><h3 class="team-card__name">Rada Rut.</h3><p class="team-card__role">Engagement Manager</p><p class="team-card__team">NU Insights</p></div>
+            <div class="team-card" data-linkedin="#"><img src="assets/img/placeholder-headshot.png" alt="" class="team-card__photo" width="100" height="100"><h3 class="team-card__name">Melchi Michael</h3><p class="team-card__role">Deputy EM</p><p class="team-card__team">NU Insights</p></div>
+            <div class="team-card" data-linkedin="#"><img src="assets/img/placeholder-headshot.png" alt="" class="team-card__photo" width="100" height="100"><h3 class="team-card__name">Harveer Bawa</h3><p class="team-card__role">Consultant</p><p class="team-card__team">NU Insights</p></div>
+            <div class="team-card" data-linkedin="#"><img src="assets/img/placeholder-headshot.png" alt="" class="team-card__photo" width="100" height="100"><h3 class="team-card__name">Alison Wang</h3><p class="team-card__role">Consultant</p><p class="team-card__team">NU Insights</p></div>
+            <div class="team-card" data-linkedin="#"><img src="assets/img/placeholder-headshot.png" alt="" class="team-card__photo" width="100" height="100"><h3 class="team-card__name">Yeow Yang Lew</h3><p class="team-card__role">Consultant</p><p class="team-card__team">NU Insights</p></div>
           </div>
 
-          <div class="team-card reveal reveal--delay-1" data-role="consultant">
-            <img src="assets/img/placeholder-headshot.svg" alt="Portrait of Emma Okonkwo" class="team-card__photo" width="80" height="80">
-            <h3 class="team-card__name">Emma Okonkwo</h3>
-            <p class="team-card__role">Consultant</p>
-            <p class="team-card__university">LSE — Accounting &amp; Finance</p>
-            <a href="#" class="team-card__linkedin" aria-label="Emma Okonkwo's LinkedIn profile">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="18" height="18"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-4 0v7h-4v-7a6 6 0 0 1 6-6z"></path><rect x="2" y="9" width="4" height="12"></rect><circle cx="4" cy="4" r="2"></circle></svg>
-            </a>
+          <h3 class="team__section-title">Outsee</h3>
+          <div class="team__grid team__grid--5col">
+            <div class="team-card" data-linkedin="#"><img src="assets/img/placeholder-headshot.png" alt="" class="team-card__photo" width="100" height="100"><h3 class="team-card__name">Benjamin Cook</h3><p class="team-card__role">Engagement Manager</p><p class="team-card__team">Outsee</p></div>
+            <div class="team-card" data-linkedin="#"><img src="assets/img/placeholder-headshot.png" alt="" class="team-card__photo" width="100" height="100"><h3 class="team-card__name">Ina Bradic</h3><p class="team-card__role">Deputy EM</p><p class="team-card__team">Outsee</p></div>
+            <div class="team-card" data-linkedin="#"><img src="assets/img/placeholder-headshot.png" alt="" class="team-card__photo" width="100" height="100"><h3 class="team-card__name">Diya Rautela</h3><p class="team-card__role">Consultant</p><p class="team-card__team">Outsee</p></div>
+            <div class="team-card" data-linkedin="#"><img src="assets/img/placeholder-headshot.png" alt="" class="team-card__photo" width="100" height="100"><h3 class="team-card__name">Melanie Lee</h3><p class="team-card__role">Consultant</p><p class="team-card__team">Outsee</p></div>
+            <div class="team-card" data-linkedin="#"><img src="assets/img/placeholder-headshot.png" alt="" class="team-card__photo" width="100" height="100"><h3 class="team-card__name">Leah Xu</h3><p class="team-card__role">Consultant</p><p class="team-card__team">Outsee</p></div>
           </div>
 
-          <div class="team-card reveal reveal--delay-2" data-role="consultant">
-            <img src="assets/img/placeholder-headshot.svg" alt="Portrait of Liam Henderson" class="team-card__photo" width="80" height="80">
-            <h3 class="team-card__name">Liam Henderson</h3>
-            <p class="team-card__role">Consultant</p>
-            <p class="team-card__university">Imperial — Computing</p>
-            <a href="#" class="team-card__linkedin" aria-label="Liam Henderson's LinkedIn profile">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="18" height="18"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-4 0v7h-4v-7a6 6 0 0 1 6-6z"></path><rect x="2" y="9" width="4" height="12"></rect><circle cx="4" cy="4" r="2"></circle></svg>
-            </a>
-          </div>
-
-          <div class="team-card reveal reveal--delay-3" data-role="consultant">
-            <img src="assets/img/placeholder-headshot.svg" alt="Portrait of Zara Malik" class="team-card__photo" width="80" height="80">
-            <h3 class="team-card__name">Zara Malik</h3>
-            <p class="team-card__role">Consultant</p>
-            <p class="team-card__university">UCL — Economics</p>
-            <a href="#" class="team-card__linkedin" aria-label="Zara Malik's LinkedIn profile">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="18" height="18"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-4 0v7h-4v-7a6 6 0 0 1 6-6z"></path><rect x="2" y="9" width="4" height="12"></rect><circle cx="4" cy="4" r="2"></circle></svg>
-            </a>
-          </div>
-
-          <div class="team-card reveal" data-role="consultant">
-            <img src="assets/img/placeholder-headshot.svg" alt="Portrait of Daniel Nakamura" class="team-card__photo" width="80" height="80">
-            <h3 class="team-card__name">Daniel Nakamura</h3>
-            <p class="team-card__role">Consultant</p>
-            <p class="team-card__university">King's — Political Economy</p>
-            <a href="#" class="team-card__linkedin" aria-label="Daniel Nakamura's LinkedIn profile">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="18" height="18"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-4 0v7h-4v-7a6 6 0 0 1 6-6z"></path><rect x="2" y="9" width="4" height="12"></rect><circle cx="4" cy="4" r="2"></circle></svg>
-            </a>
-          </div>
-
-          <div class="team-card reveal reveal--delay-1" data-role="consultant">
-            <img src="assets/img/placeholder-headshot.svg" alt="Portrait of Chloe Dubois" class="team-card__photo" width="80" height="80">
-            <h3 class="team-card__name">Chloe Dubois</h3>
-            <p class="team-card__role">Consultant</p>
-            <p class="team-card__university">LSE — Management</p>
-            <a href="#" class="team-card__linkedin" aria-label="Chloe Dubois's LinkedIn profile">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="18" height="18"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-4 0v7h-4v-7a6 6 0 0 1 6-6z"></path><rect x="2" y="9" width="4" height="12"></rect><circle cx="4" cy="4" r="2"></circle></svg>
-            </a>
-          </div>
-
-          <div class="team-card reveal reveal--delay-2" data-role="consultant">
-            <img src="assets/img/placeholder-headshot.svg" alt="Portrait of Arjun Patel" class="team-card__photo" width="80" height="80">
-            <h3 class="team-card__name">Arjun Patel</h3>
-            <p class="team-card__role">Consultant</p>
-            <p class="team-card__university">Imperial — Mathematics</p>
-            <a href="#" class="team-card__linkedin" aria-label="Arjun Patel's LinkedIn profile">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="18" height="18"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-4 0v7h-4v-7a6 6 0 0 1 6-6z"></path><rect x="2" y="9" width="4" height="12"></rect><circle cx="4" cy="4" r="2"></circle></svg>
-            </a>
-          </div>
-
-          <div class="team-card reveal reveal--delay-3" data-role="consultant">
-            <img src="assets/img/placeholder-headshot.svg" alt="Portrait of Isabella Rossi" class="team-card__photo" width="80" height="80">
-            <h3 class="team-card__name">Isabella Rossi</h3>
-            <p class="team-card__role">Consultant</p>
-            <p class="team-card__university">UCL — Statistics</p>
-            <a href="#" class="team-card__linkedin" aria-label="Isabella Rossi's LinkedIn profile">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="18" height="18"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-4 0v7h-4v-7a6 6 0 0 1 6-6z"></path><rect x="2" y="9" width="4" height="12"></rect><circle cx="4" cy="4" r="2"></circle></svg>
-            </a>
+          <h3 class="team__section-title">Prescient Labs</h3>
+          <div class="team__grid team__grid--5col">
+            <div class="team-card" data-linkedin="#"><img src="assets/img/placeholder-headshot.png" alt="" class="team-card__photo" width="100" height="100"><h3 class="team-card__name">Maya Munasinghe</h3><p class="team-card__role">Engagement Manager</p><p class="team-card__team">Prescient Labs</p></div>
+            <div class="team-card" data-linkedin="#"><img src="assets/img/placeholder-headshot.png" alt="" class="team-card__photo" width="100" height="100"><h3 class="team-card__name">Angel Chan</h3><p class="team-card__role">Deputy EM</p><p class="team-card__team">Prescient Labs</p></div>
+            <div class="team-card" data-linkedin="#"><img src="assets/img/placeholder-headshot.png" alt="" class="team-card__photo" width="100" height="100"><h3 class="team-card__name">Lok Chew Rui</h3><p class="team-card__role">Consultant</p><p class="team-card__team">Prescient Labs</p></div>
+            <div class="team-card" data-linkedin="#"><img src="assets/img/placeholder-headshot.png" alt="" class="team-card__photo" width="100" height="100"><h3 class="team-card__name">Siddhant Agarrwal</h3><p class="team-card__role">Consultant</p><p class="team-card__team">Prescient Labs</p></div>
+            <div class="team-card" data-linkedin="#"><img src="assets/img/placeholder-headshot.png" alt="" class="team-card__photo" width="100" height="100"><h3 class="team-card__name">Sharvvind Ganesan</h3><p class="team-card__role">Consultant</p><p class="team-card__team">Prescient Labs</p></div>
+            <div class="team-card" data-linkedin="#"><img src="assets/img/placeholder-headshot.png" alt="" class="team-card__photo" width="100" height="100"><h3 class="team-card__name">Dominic Camino</h3><p class="team-card__role">Consultant</p><p class="team-card__team">Prescient Labs</p></div>
           </div>
 
         </div>
+
       </div>
     </section>
 
   </main>
 
-<!-- ════════════ FOOTER ════════════ -->
   <footer class="footer" role="contentinfo">
     <div class="container">
       <div class="footer__grid">
@@ -227,12 +201,8 @@
           <p class="footer__label">Recruiting</p>
           <a href="mailto:ccnlondonrecruiting@gmail.com" class="footer__email">ccnlondonrecruiting@gmail.com</a>
           <div class="footer__socials">
-            <a href="https://www.linkedin.com/company/cambridge-consulting-network-london/" target="_blank" rel="noopener noreferrer" class="footer__social-btn" aria-label="LinkedIn">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect x="2" y="9" width="4" height="12"></rect><circle cx="4" cy="4" r="2"></circle></svg>
-            </a>
-            <a href="https://www.instagram.com/ccnlondon" target="_blank" rel="noopener noreferrer" class="footer__social-btn" aria-label="Instagram">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line></svg>
-            </a>
+            <a href="https://www.linkedin.com/company/cambridge-consulting-network-london/" target="_blank" rel="noopener noreferrer" class="footer__social-btn" aria-label="LinkedIn"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect x="2" y="9" width="4" height="12"></rect><circle cx="4" cy="4" r="2"></circle></svg></a>
+            <a href="https://www.instagram.com/ccnlondon" target="_blank" rel="noopener noreferrer" class="footer__social-btn" aria-label="Instagram"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line></svg></a>
           </div>
         </div>
       </div>
@@ -241,7 +211,33 @@
       </div>
     </div>
   </footer>
-  
+
   <script src="js/main.js"></script>
+  <script>
+    (() => {
+      // Tab switching
+      const tabs = document.querySelectorAll('.team__tab');
+      const panels = document.querySelectorAll('.team__panel');
+      tabs.forEach(tab => {
+        tab.addEventListener('click', () => {
+          tabs.forEach(t => t.classList.remove('team__tab--active'));
+          tab.classList.add('team__tab--active');
+          panels.forEach(p => {
+            p.style.display = (p.id === 'panel-' + tab.dataset.tab) ? '' : 'none';
+          });
+        });
+      });
+
+      // Clickable cards → LinkedIn
+      document.querySelectorAll('.team-card').forEach(card => {
+        card.addEventListener('click', () => {
+          const url = card.dataset.linkedin;
+          if (url && url !== '#') {
+            window.open(url, '_blank');
+          }
+        });
+      });
+    })();
+  </script>
 </body>
 </html>
