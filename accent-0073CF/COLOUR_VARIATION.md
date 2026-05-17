@@ -1,4 +1,3 @@
-# Colour Variation: #0073CF
+# Colour Variation: Azure Blue
 
 Accent colour: `#0073CF`
-Base variation: `#0057AD`
