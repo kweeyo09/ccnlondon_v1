@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact — CCN London</title>
+  <meta name="description" content="Get in touch with CCN London for client applications, partnership enquiries, or general questions.">
+  <meta property="og:title" content="Contact — CCN London">
+  <meta property="og:description" content="Contact CCN London for enquiries about consulting engagements, partnerships or recruitment.">
+  <meta property="og:type" content="website">
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="Contact — CCN London">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+<!-- ── Back to Colour Variations button ── -->
+<style>
+  .ccn-back-btn {
+    position: fixed;
+    top: 14px;
+    left: 16px;
+    z-index: 9999;
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    padding: 7px 14px 7px 10px;
+    background: rgba(255,255,255,0.92);
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
+    border: 1px solid rgba(0,0,0,0.12);
+    border-radius: 6px;
+    font-family: system-ui, -apple-system, sans-serif;
+    font-size: 13px;
+    font-weight: 600;
+    color: #1a1a1a;
+    text-decoration: none;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.10);
+    transition: box-shadow 0.15s ease, background 0.15s ease;
+  }
+  .ccn-back-btn:hover {
+    background: rgba(255,255,255,1);
+    box-shadow: 0 4px 16px rgba(0,0,0,0.14);
+    color: #1a1a1a;
+  }
+  .ccn-back-btn svg { flex-shrink: 0; }
+</style>
+<a class="ccn-back-btn" href="/">
+  <svg width="14" height="14" viewBox="0 0 14 14" fill="none"
+       stroke="currentColor" stroke-width="2"
+       stroke-linecap="round" stroke-linejoin="round">
+    <path d="M13 7H1M6 2L1 7l5 5"/>
+  </svg>
+  Colour Variations
+</a>
+<!-- ── / Back button ── -->
+
+
+  <a class="skip-link" href="#main-content">Skip to content</a>
+
+  <header class="navbar navbar--animate" role="banner">
+    <div class="navbar__inner">
+      <a href="index.html" class="navbar__logo" aria-label="CCN London Home">
+        <img src="assets/img/logo-colour.png" alt="CCN London logo" width="180" height="48">
+      </a>
+      <nav class="navbar__links" aria-label="Main navigation">
+        <a href="index.html" class="navbar__link">Home</a>
+        <a href="about.html" class="navbar__link">About</a>
+        <a href="services.html" class="navbar__link">Services</a>
+        <a href="team.html" class="navbar__link">Team</a>
+        <a href="partnerships.html" class="navbar__link">Partnerships</a>
+        <a href="clients.html" class="navbar__link">Clients</a>
+        <a href="join.html" class="navbar__link">Join Us</a>
+        <a href="contact.html" class="navbar__link navbar__link--active">Contact</a>
+      </nav>
+      <a href="join.html" class="navbar__cta">Join Us</a>
+      <button class="navbar__hamburger" aria-label="Open menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <div class="mobile-menu__overlay" aria-hidden="true"></div>
+  <nav class="mobile-menu" aria-label="Mobile navigation" aria-hidden="true">
+    <a href="index.html" class="mobile-menu__link">Home</a>
+    <a href="about.html" class="mobile-menu__link">About</a>
+    <a href="services.html" class="mobile-menu__link">Services</a>
+    <a href="team.html" class="mobile-menu__link">Team</a>
+    <a href="partnerships.html" class="mobile-menu__link">Partnerships</a>
+    <a href="clients.html" class="mobile-menu__link">Clients</a>
+    <a href="join.html" class="mobile-menu__link">Join Us</a>
+    <a href="contact.html" class="mobile-menu__link mobile-menu__link--active">Contact</a>
+  </nav>
+
+  <main id="main-content">
+
+    <section class="page-header">
+      <div class="container">
+        <h1 class="page-header__title">Get in <span class="text-cyan">Touch</span></h1>
+        <p class="page-header__subtitle">Whether you're a potential client, partner or prospective consultant — we'd love to hear from you.</p>
+      </div>
+    </section>
+
+    <section class="section" aria-label="Contact form and information">
+      <div class="container">
+        <div class="cards__grid" style="grid-template-columns: 2fr 1fr; align-items: start;">
+
+          <!-- Contact Form -->
+          <div>
+            <h2 class="mb-lg">Send us a message</h2>
+            <form id="contact-form" action="https://docs.google.com/forms/d/e/placeholder/formResponse" method="POST" novalidate>
+
+              <div class="form__group">
+                <label for="name" class="form__label">Name</label>
+                <input type="text" id="name" name="name" class="form__input" required autocomplete="name" placeholder="Your full name">
+                <p class="form__error" id="name-error">Please enter your name.</p>
+              </div>
+
+              <div class="form__group">
+                <label for="email" class="form__label">Email</label>
+                <input type="email" id="email" name="email" class="form__input" required autocomplete="email" placeholder="your.email@example.com">
+                <p class="form__error" id="email-error">Please enter a valid email address.</p>
+              </div>
+
+              <div class="form__group">
+                <label for="subject" class="form__label">Subject</label>
+                <select id="subject" name="subject" class="form__select" required>
+                  <option value="" disabled selected>Select a subject</option>
+                  <option value="general">General Enquiry</option>
+                  <option value="client">Client Application</option>
+                  <option value="partnership">Partnership</option>
+                  <option value="other">Other</option>
+                </select>
+                <p class="form__error" id="subject-error">Please select a subject.</p>
+              </div>
+
+              <div class="form__group">
+                <label for="message" class="form__label">Message</label>
+                <textarea id="message" name="message" class="form__textarea" required placeholder="Tell us how we can help..."></textarea>
+                <p class="form__error" id="message-error">Please enter a message.</p>
+              </div>
+
+              <button type="submit" class="btn btn--primary btn--large" style="width: 100%;">Send Message</button>
+            </form>
+          </div>
+
+          <!-- Contact Info Sidebar -->
+          <div>
+            <div class="card" style="margin-bottom: var(--space-lg);">
+              <h3 class="card__title">Email</h3>
+              <p class="card__text"><a href="mailto:ccnlondonclients@gmail.com">ccnlondonclients@gmail.com</a></p>
+            </div>
+
+            <div class="card" style="margin-bottom: var(--space-lg);">
+              <h3 class="card__title">Follow Us</h3>
+              <div style="display: flex; gap: var(--space-md); margin-top: var(--space-md);">
+                <a href="#" class="btn btn--outline" style="padding: var(--space-sm) var(--space-md); font-size: var(--text-sm);" aria-label="CCN London on LinkedIn">LinkedIn</a>
+                <a href="#" class="btn btn--outline" style="padding: var(--space-sm) var(--space-md); font-size: var(--text-sm);" aria-label="CCN London on Instagram">Instagram</a>
+              </div>
+            </div>
+
+            <div class="card">
+              <h3 class="card__title">Website</h3>
+              <p class="card__text"><a href="https://cambridgeconsultingnetwork.co/london" target="_blank" rel="noopener noreferrer">cambridgeconsultingnetwork.co/london</a></p>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ════════════ FOOTER ════════════ -->
+  <footer class="footer" role="contentinfo">
+    <div class="container">
+      <div class="footer__grid">
+        <div>
+          <img src="assets/img/logo-white.png" alt="CCN London" class="footer__logo" width="120" height="120">
+          <p class="footer__text">Cambridge Consulting Network London delivers data-driven strategic consulting from LSE, Imperial, UCL and King's College London.</p>
+        </div>
+        <div>
+          <h3 class="footer__heading">Quick Links</h3>
+          <a href="about.html" class="footer__link">About</a>
+          <a href="services.html" class="footer__link">Services</a>
+          <a href="team.html" class="footer__link">Team</a>
+          <a href="partnerships.html" class="footer__link">Partnerships</a>
+          <a href="clients.html" class="footer__link">Clients</a>
+          <a href="join.html" class="footer__link">Join Us</a>
+          <a href="contact.html" class="footer__link">Contact</a>
+        </div>
+        <div>
+          <h3 class="footer__heading">Get in Touch</h3>
+          <p class="footer__label">General</p>
+          <a href="mailto:ccnlondon2025@gmail.com" class="footer__email">ccnlondon2025@gmail.com</a>
+          <p class="footer__label">Clients</p>
+          <a href="mailto:ccnlondonclients@gmail.com" class="footer__email">ccnlondonclients@gmail.com</a>
+          <p class="footer__label">Partnerships</p>
+          <a href="mailto:ccnlondonexternal@gmail.com" class="footer__email">ccnlondonexternal@gmail.com</a>
+          <p class="footer__label">Recruiting</p>
+          <a href="mailto:ccnlondonrecruiting@gmail.com" class="footer__email">ccnlondonrecruiting@gmail.com</a>
+          <div class="footer__socials">
+            <a href="https://www.linkedin.com/company/cambridge-consulting-network-london/" target="_blank" rel="noopener noreferrer" class="footer__social-btn" aria-label="LinkedIn">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect x="2" y="9" width="4" height="12"></rect><circle cx="4" cy="4" r="2"></circle></svg>
+            </a>
+            <a href="https://www.instagram.com/ccnlondon" target="_blank" rel="noopener noreferrer" class="footer__social-btn" aria-label="Instagram">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line></svg>
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="footer__bottom">
+        <p>&copy; 2026 Cambridge Consulting Network. Registered in England &amp; Wales.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+  <script src="js/forms.js"></script>
+</body>
+</html>
