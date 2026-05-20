@@ -450,7 +450,7 @@ h4 { font-size: var(--text-xl); }
 .stats {
   background: var(--ccn-white);
   padding: var(--space-2xl) 0;
-  border-bottom: 1px solid rgba(0, 174, 239, 0.1);
+  border-bottom: 1px solid rgba(0, 87, 173, 0.1);
 }
 
 .stats__grid {
@@ -687,7 +687,7 @@ h4 { font-size: var(--text-xl); }
   text-align: center;
   position: relative;
   overflow: hidden;
-  background: url('../assets/img/londonbanner.jpg') center 80%/cover no-repeat;
+  background: url('..//manus-storage/londonbanner_86c29ca9.jpg') center 80%/cover no-repeat;
 }
 
 .page-header::before {
@@ -696,8 +696,8 @@ h4 { font-size: var(--text-xl); }
   inset: 0;
   background: linear-gradient(
     180deg,
-    rgba(200, 230, 255, 0.5) 0%,
-    rgba(0, 140, 200, 0.35) 100%
+    rgba(191, 216, 239, 0.5) 0%,
+    rgba(0, 62, 122, 0.35) 100%
   );
   backdrop-filter: blur(0px);
   -webkit-backdrop-filter: blur(0px);
@@ -780,7 +780,7 @@ h4 { font-size: var(--text-xl); }
 
 .h-timeline__dot--active {
   background: var(--ccn-cyan);
-  box-shadow: 0 0 0 4px rgba(0, 174, 239, 0.2);
+  box-shadow: 0 0 0 4px rgba(0, 87, 173, 0.2);
 }
 
 .h-timeline__year {
@@ -839,7 +839,7 @@ h4 { font-size: var(--text-xl); }
 
 .week-timeline__item:hover {
   transform: translateY(-4px);
-  box-shadow: 0 8px 24px rgba(0, 174, 239, 0.15);
+  box-shadow: 0 8px 24px rgba(0, 87, 173, 0.15);
 }
 
 .week-timeline__item--wide {
@@ -939,8 +939,8 @@ h4 { font-size: var(--text-xl); }
 }
 
 .team-card {
-  background: #edf4fb;
-  border: 1px solid #d4e4f0;
+  background: #EDF3FA;
+  border: 1px solid #D3E0EF;
   border-radius: var(--radius-md);
   padding: var(--space-lg);
   text-align: center;
@@ -999,7 +999,7 @@ h4 { font-size: var(--text-xl); }
   margin-top: var(--space-xl);
   margin-bottom: var(--space-lg);
   padding-bottom: var(--space-sm);
-  border-bottom: 2px solid rgba(0, 174, 239, 0.15);
+  border-bottom: 2px solid rgba(0, 87, 173, 0.15);
 }
 
 .team__section-title:first-child {
@@ -1110,7 +1110,7 @@ h4 { font-size: var(--text-xl); }
 .form__textarea:focus {
   outline: none;
   border-color: var(--ccn-cyan);
-  box-shadow: 0 0 0 3px rgba(0, 174, 239, 0.15);
+  box-shadow: 0 0 0 3px rgba(0, 87, 173, 0.15);
 }
 
 .form__input--error,
@@ -1336,7 +1336,7 @@ h4 { font-size: var(--text-xl); }
    VALUE PROPOSITIONS BACKGROUND
    ============================================================ */
 section[aria-label="Value propositions"] {
-  background: linear-gradient(165deg, #f0f9ff 0%, #f8fcff 40%, #eef7fe 100%);
+  background: linear-gradient(165deg, #EEF5FC 0%, #F8FBFE 40%, #EAF2FB 100%);
   position: relative;
   padding: var(--space-2xl) 0;
 }
@@ -1345,7 +1345,7 @@ section[aria-label="Value propositions"]::before {
   content: '';
   position: absolute;
   inset: 0;
-  background-image: radial-gradient(rgba(0, 174, 239, 0.04) 1px, transparent 1px);
+  background-image: radial-gradient(rgba(0, 87, 173, 0.04) 1px, transparent 1px);
   background-size: 28px 28px;
   pointer-events: none;
 }
@@ -1384,8 +1384,8 @@ section[aria-label="Value propositions"]::before {
   inset: 0;
   background: linear-gradient(
     180deg,
-    rgba(129, 211, 255, 0.443) 0%,
-    rgba(115, 157, 179, 0.4) 50%,
+    rgba(102, 154, 205, 0.443) 0%,
+    rgba(83, 119, 154, 0.4) 50%,
     rgba(26, 26, 26, 0.6) 100%
   );
 }
@@ -1553,7 +1553,7 @@ section[aria-label="Value propositions"]::before {
   content: '';
   position: absolute;
   inset: 0;
-  background-image: radial-gradient(rgba(0, 174, 239, 0.06) 1px, transparent 1px);
+  background-image: radial-gradient(rgba(0, 87, 173, 0.06) 1px, transparent 1px);
   background-size: 28px 28px;
   pointer-events: none;
 }
@@ -1599,7 +1599,7 @@ section[aria-label="Value propositions"]::before {
 }
 
 .timeline--dark::before {
-  background: rgba(0, 174, 239, 0.2);
+  background: rgba(0, 87, 173, 0.2);
 }
 
 .timeline--dark .timeline__item::before {
@@ -1619,13 +1619,13 @@ section[aria-label="Value propositions"]::before {
 
 .presence__item--pop:hover {
   transform: translateY(-4px);
-  box-shadow: 0 12px 32px rgba(0, 174, 239, 0.15);
+  box-shadow: 0 12px 32px rgba(0, 87, 173, 0.15);
   border-color: var(--ccn-cyan);
 }
 
 .presence__item--active {
   border-color: var(--ccn-cyan);
-  background: rgba(0, 174, 239, 0.04);
+  background: rgba(0, 87, 173, 0.04);
 }
 
 .presence__item--active .presence__city {
@@ -1664,7 +1664,7 @@ section[aria-label="Value propositions"]::before {
 
 .org-chart__node {
   background: var(--ccn-white);
-  border: 2px solid rgba(0, 174, 239, 0.15);
+  border: 2px solid rgba(0, 87, 173, 0.15);
   border-radius: var(--radius-md);
   padding: var(--space-lg);
   text-align: center;
@@ -1676,7 +1676,7 @@ section[aria-label="Value propositions"]::before {
 
 .org-chart__node:hover {
   transform: translateY(-3px);
-  box-shadow: 0 8px 24px rgba(0, 174, 239, 0.12);
+  box-shadow: 0 8px 24px rgba(0, 87, 173, 0.12);
   border-color: var(--ccn-cyan);
 }
 
@@ -1710,7 +1710,7 @@ section[aria-label="Value propositions"]::before {
 
 .org-chart__chip {
   background: var(--ccn-white);
-  border: 2px solid rgba(0, 174, 239, 0.15);
+  border: 2px solid rgba(0, 87, 173, 0.15);
   border-radius: var(--radius-sm);
   padding: var(--space-sm) var(--space-lg);
   font-family: var(--font-display);
@@ -1724,7 +1724,7 @@ section[aria-label="Value propositions"]::before {
 .org-chart__chip:hover {
   transform: translateY(-2px);
   border-color: var(--ccn-cyan);
-  box-shadow: 0 6px 16px rgba(0, 174, 239, 0.1);
+  box-shadow: 0 6px 16px rgba(0, 87, 173, 0.1);
 }
 
 @media (max-width: 639px) {

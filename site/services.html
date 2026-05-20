@@ -13,21 +13,47 @@
   <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
-  <!-- Back to Colour Variations -->
-  <a href="/" id="back-to-variations" style="
-    position:fixed;top:16px;left:16px;z-index:99999;
-    display:inline-flex;align-items:center;gap:6px;
-    padding:8px 14px;border-radius:8px;
-    background:rgba(255,255,255,0.85);backdrop-filter:blur(8px);
-    border:1px solid rgba(0,0,0,0.12);
-    font-family:system-ui,sans-serif;font-size:13px;font-weight:500;
-    color:#1a1a1a;text-decoration:none;
-    box-shadow:0 2px 8px rgba(0,0,0,0.12);
-    transition:background 0.15s,box-shadow 0.15s;
-  " onmouseover="this.style.background='rgba(255,255,255,0.98)';this.style.boxShadow='0 4px 16px rgba(0,0,0,0.18)'"
-     onmouseout="this.style.background='rgba(255,255,255,0.85)';this.style.boxShadow='0 2px 8px rgba(0,0,0,0.12)'">
-    ← Colour Variations
-  </a>
+<!-- ── Back to Colour Variations button ── -->
+<style>
+  .ccn-back-btn {
+    position: fixed;
+    top: 14px;
+    left: 16px;
+    z-index: 9999;
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    padding: 7px 14px 7px 10px;
+    background: rgba(255,255,255,0.92);
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
+    border: 1px solid rgba(0,0,0,0.12);
+    border-radius: 6px;
+    font-family: system-ui, -apple-system, sans-serif;
+    font-size: 13px;
+    font-weight: 600;
+    color: #1a1a1a;
+    text-decoration: none;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.10);
+    transition: box-shadow 0.15s ease, background 0.15s ease;
+  }
+  .ccn-back-btn:hover {
+    background: rgba(255,255,255,1);
+    box-shadow: 0 4px 16px rgba(0,0,0,0.14);
+    color: #1a1a1a;
+  }
+  .ccn-back-btn svg { flex-shrink: 0; }
+</style>
+<a class="ccn-back-btn" href="/">
+  <svg width="14" height="14" viewBox="0 0 14 14" fill="none"
+       stroke="currentColor" stroke-width="2"
+       stroke-linecap="round" stroke-linejoin="round">
+    <path d="M13 7H1M6 2L1 7l5 5"/>
+  </svg>
+  Colour Variations
+</a>
+<!-- ── / Back button ── -->
+
 
   <a class="skip-link" href="#main-content">Skip to content</a>
 
@@ -118,7 +144,7 @@
     </section>
 
     <!-- 8-Week Timeline -->
-    <section class="section" aria-label="Project timeline" style="background: linear-gradient(165deg, #f0f9ff 0%, #f8fcff 40%, #eef7fe 100%); padding: var(--space-2xl) 0;">
+    <section class="section" aria-label="Project timeline" style="background: linear-gradient(165deg, #EEF5FC 0%, #F8FBFE 40%, #EAF2FB 100%); padding: var(--space-2xl) 0;">
       <div class="container">
         <h2 class="text-cyan mb-xl" style="text-align:center;">8-Week Engagement Cycle</h2>
         <div class="week-timeline">
