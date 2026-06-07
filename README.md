@@ -28,8 +28,8 @@ Plain HTML, CSS, and JavaScript. Deployed on Vercel.
 ## Local Development
 
 ```bash
-git clone https://github.com/rexheng/ccnlondon.git
-cd ccnlondon
+git clone https://github.com/kweeyo09/ccnlondon_v1.git
+cd ccnlondon_v1
 open index.html
 ```
 

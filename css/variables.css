@@ -4,12 +4,12 @@
 
 :root {
   /* ── Colour Palette ── */
-  --ccn-cyan:   #00AEEF;
+  --ccn-cyan:   #2979EB;
   --ccn-grey:   #808285;
   --ccn-dark:   #2D2D2D;
   --ccn-white:  #FFFFFF;
-  --ccn-light:  #E8F6FD;
-  --ccn-deep:   #0077A8;
+  --ccn-light:  #EBF2FF;
+  --ccn-deep:   #1a5fbf;
 
   /* ── Typography ── */
   --font-display: 'DM Sans', sans-serif;
@@ -48,7 +48,7 @@
 
   /* ── Layout ── */
   --max-width:  1200px;
-  --nav-height: 72px;
+  --nav-height: 90px;
 
   /* ── Transitions ── */
   --ease-out:  cubic-bezier(0.22, 1, 0.36, 1);

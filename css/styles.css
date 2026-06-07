@@ -451,7 +451,7 @@ h4 { font-size: var(--text-xl); }
 .stats {
   background: var(--ccn-white);
   padding: var(--space-2xl) 0;
-  border-bottom: 1px solid rgba(0, 174, 239, 0.1);
+  border-bottom: 1px solid rgba(41, 121, 235, 0.1);
 }
 
 .stats__grid {
@@ -781,7 +781,7 @@ h4 { font-size: var(--text-xl); }
 
 .h-timeline__dot--active {
   background: var(--ccn-cyan);
-  box-shadow: 0 0 0 4px rgba(0, 174, 239, 0.2);
+  box-shadow: 0 0 0 4px rgba(41, 121, 235, 0.2);
 }
 
 .h-timeline__year {
@@ -840,7 +840,7 @@ h4 { font-size: var(--text-xl); }
 
 .week-timeline__item:hover {
   transform: translateY(-4px);
-  box-shadow: 0 8px 24px rgba(0, 174, 239, 0.15);
+  box-shadow: 0 8px 24px rgba(41, 121, 235, 0.15);
 }
 
 .week-timeline__item--wide {
@@ -1000,7 +1000,7 @@ h4 { font-size: var(--text-xl); }
   margin-top: var(--space-xl);
   margin-bottom: var(--space-lg);
   padding-bottom: var(--space-sm);
-  border-bottom: 2px solid rgba(0, 174, 239, 0.15);
+  border-bottom: 2px solid rgba(41, 121, 235, 0.15);
 }
 
 .team__section-title:first-child {
@@ -1111,7 +1111,7 @@ h4 { font-size: var(--text-xl); }
 .form__textarea:focus {
   outline: none;
   border-color: var(--ccn-cyan);
-  box-shadow: 0 0 0 3px rgba(0, 174, 239, 0.15);
+  box-shadow: 0 0 0 3px rgba(41, 121, 235, 0.15);
 }
 
 .form__input--error,
@@ -1346,7 +1346,7 @@ section[aria-label="Value propositions"]::before {
   content: '';
   position: absolute;
   inset: 0;
-  background-image: radial-gradient(rgba(0, 174, 239, 0.04) 1px, transparent 1px);
+  background-image: radial-gradient(rgba(41, 121, 235, 0.04) 1px, transparent 1px);
   background-size: 28px 28px;
   pointer-events: none;
 }
@@ -1362,7 +1362,7 @@ section[aria-label="Value propositions"]::before {
   align-items: center;
   justify-content: center;
   overflow: hidden;
-  padding: var(--space-3xl) var(--space-xl);
+  padding: var(--nav-height) var(--space-xl) 0;
 }
 
 /* Video container */
@@ -1385,8 +1385,8 @@ section[aria-label="Value propositions"]::before {
   inset: 0;
   background: linear-gradient(
     180deg,
-    rgba(129, 211, 255, 0.443) 0%,
-    rgba(115, 157, 179, 0.4) 50%,
+    rgba(41, 121, 235, 0.25) 0%,
+    rgba(41, 121, 235, 0.15) 50%,
     rgba(26, 26, 26, 0.6) 100%
   );
 }
@@ -1554,7 +1554,7 @@ section[aria-label="Value propositions"]::before {
   content: '';
   position: absolute;
   inset: 0;
-  background-image: radial-gradient(rgba(0, 174, 239, 0.06) 1px, transparent 1px);
+  background-image: radial-gradient(rgba(41, 121, 235, 0.06) 1px, transparent 1px);
   background-size: 28px 28px;
   pointer-events: none;
 }
@@ -1600,7 +1600,7 @@ section[aria-label="Value propositions"]::before {
 }
 
 .timeline--dark::before {
-  background: rgba(0, 174, 239, 0.2);
+  background: rgba(41, 121, 235, 0.2);
 }
 
 .timeline--dark .timeline__item::before {
@@ -1620,13 +1620,13 @@ section[aria-label="Value propositions"]::before {
 
 .presence__item--pop:hover {
   transform: translateY(-4px);
-  box-shadow: 0 12px 32px rgba(0, 174, 239, 0.15);
+  box-shadow: 0 12px 32px rgba(41, 121, 235, 0.15);
   border-color: var(--ccn-cyan);
 }
 
 .presence__item--active {
   border-color: var(--ccn-cyan);
-  background: rgba(0, 174, 239, 0.04);
+  background: rgba(41, 121, 235, 0.04);
 }
 
 .presence__item--active .presence__city {
@@ -1665,7 +1665,7 @@ section[aria-label="Value propositions"]::before {
 
 .org-chart__node {
   background: var(--ccn-white);
-  border: 2px solid rgba(0, 174, 239, 0.15);
+  border: 2px solid rgba(41, 121, 235, 0.15);
   border-radius: var(--radius-md);
   padding: var(--space-lg);
   text-align: center;
@@ -1677,7 +1677,7 @@ section[aria-label="Value propositions"]::before {
 
 .org-chart__node:hover {
   transform: translateY(-3px);
-  box-shadow: 0 8px 24px rgba(0, 174, 239, 0.12);
+  box-shadow: 0 8px 24px rgba(41, 121, 235, 0.12);
   border-color: var(--ccn-cyan);
 }
 
@@ -1711,7 +1711,7 @@ section[aria-label="Value propositions"]::before {
 
 .org-chart__chip {
   background: var(--ccn-white);
-  border: 2px solid rgba(0, 174, 239, 0.15);
+  border: 2px solid rgba(41, 121, 235, 0.15);
   border-radius: var(--radius-sm);
   padding: var(--space-sm) var(--space-lg);
   font-family: var(--font-display);
@@ -1725,7 +1725,7 @@ section[aria-label="Value propositions"]::before {
 .org-chart__chip:hover {
   transform: translateY(-2px);
   border-color: var(--ccn-cyan);
-  box-shadow: 0 6px 16px rgba(0, 174, 239, 0.1);
+  box-shadow: 0 6px 16px rgba(41, 121, 235, 0.1);
 }
 
 @media (max-width: 639px) {
