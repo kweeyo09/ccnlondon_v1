@@ -152,11 +152,12 @@ h4 { font-size: var(--text-xl); }
   z-index: 100;
   display: flex;
   align-items: center;
-  transition: box-shadow 0.3s ease;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  box-shadow: var(--shadow-md);
 }
 
-.navbar--scrolled {
-  box-shadow: var(--shadow-md);
+.navbar--hidden {
+  transform: translateY(-100%);
 }
 
 .navbar__inner {

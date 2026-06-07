@@ -6,14 +6,19 @@
 (() => {
   'use strict';
 
-  // ── Navbar scroll shadow ──
+  // ── Navbar hide on scroll down, show on scroll up ──
   const navbar = document.querySelector('.navbar');
   if (navbar) {
-    const onScroll = () => {
-      navbar.classList.toggle('navbar--scrolled', window.scrollY > 10);
-    };
-    window.addEventListener('scroll', onScroll, { passive: true });
-    onScroll();
+    let lastY = window.scrollY;
+    window.addEventListener('scroll', () => {
+      const y = window.scrollY;
+      if (y > lastY && y > 80) {
+        navbar.classList.add('navbar--hidden');
+      } else {
+        navbar.classList.remove('navbar--hidden');
+      }
+      lastY = y;
+    }, { passive: true });
   }
 
   // ── Mobile menu ──
