@@ -177,7 +177,6 @@ h4 { font-size: var(--text-xl); }
   width: 175px;
   height: auto;
   margin-top: 6px;
-  filter: hue-rotate(18deg) saturate(0.82) brightness(0.97);
 }
 
 .navbar__links {
