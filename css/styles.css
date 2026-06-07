@@ -494,25 +494,25 @@ h4 { font-size: var(--text-xl); }
 }
 
 .card {
-  background: var(--ccn-white);
+  background: var(--ccn-cyan);
   border: none;
-  border-left: 4px solid var(--ccn-cyan);
+  border-left: 4px solid var(--ccn-deep);
   border-radius: var(--radius-lg);
   padding: var(--space-lg) var(--space-lg);
-  box-shadow: 0 6px 24px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 6px 24px rgba(41, 121, 235, 0.25);
   transition: transform 0.3s var(--ease-out), box-shadow 0.3s var(--ease-out);
   position: relative;
 }
 
 .card:hover {
   transform: translateY(-4px);
-  box-shadow: 0 16px 30px rgba(0, 0, 0, 0.14);
+  box-shadow: 0 16px 30px rgba(41, 121, 235, 0.35);
 }
 
 .card__icon {
   width: 40px;
   height: 40px;
-  color: var(--ccn-cyan);
+  color: var(--ccn-white);
   margin-bottom: var(--space-sm);
 }
 
@@ -521,12 +521,12 @@ h4 { font-size: var(--text-xl); }
   font-size: var(--text-lg);
   font-weight: 700;
   margin-bottom: var(--space-xs);
-  color: var(--ccn-dark);
+  color: var(--ccn-white);
 }
 
 .card__text {
   font-size: var(--text-sm);
-  color: var(--ccn-grey);
+  color: rgba(255, 255, 255, 0.8);
   line-height: 1.6;
 }
 
@@ -1101,27 +1101,21 @@ h4 { font-size: var(--text-xl); }
 .form__textarea {
   width: 100%;
   padding: var(--space-md);
-  border: 2px solid var(--ccn-cyan);
+  border: 2px solid #e5e7eb;
   border-radius: var(--radius-sm);
   font-family: var(--font-body);
   font-size: var(--text-base);
-  color: var(--ccn-white);
-  transition: border-color 0.2s ease, box-shadow 0.2s ease, background 0.2s ease;
-  background: var(--ccn-cyan);
-}
-
-.form__input::placeholder,
-.form__textarea::placeholder {
-  color: rgba(255, 255, 255, 0.6);
+  color: var(--ccn-dark);
+  transition: border-color 0.2s ease, box-shadow 0.2s ease;
+  background: var(--ccn-white);
 }
 
 .form__input:focus,
 .form__select:focus,
 .form__textarea:focus {
   outline: none;
-  border-color: var(--ccn-deep);
-  background: var(--ccn-deep);
-  box-shadow: 0 0 0 3px rgba(41, 121, 235, 0.25);
+  border-color: var(--ccn-cyan);
+  box-shadow: 0 0 0 3px rgba(41, 121, 235, 0.15);
 }
 
 .form__input--error,
