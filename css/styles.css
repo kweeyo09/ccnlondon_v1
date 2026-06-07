@@ -1359,7 +1359,7 @@ section[aria-label="Value propositions"]::before {
 
 .hero {
   position: relative;
-  min-height: 70vh;
+  min-height: 100vh;
   display: flex;
   align-items: center;
   justify-content: flex-start;
@@ -1415,13 +1415,13 @@ section[aria-label="Value propositions"]::before {
 /* Headline */
 .hero__headline {
   font-family: var(--font-display);
-  font-size: clamp(3.5rem, 8vw, 7rem);
-  font-weight: 700;
-  line-height: 1.05;
+  font-size: clamp(2rem, 3.5vw, 3.25rem);
+  font-weight: 300;
+  line-height: 1.2;
   color: var(--ccn-white);
-  letter-spacing: -0.02em;
+  letter-spacing: 0.01em;
   margin-bottom: var(--space-lg);
-  text-shadow: 0 4px 30px rgba(0, 0, 0, 0.5), 0 1px 3px rgba(0, 0, 0, 0.3);
+  text-shadow: 0 2px 20px rgba(0, 0, 0, 0.4);
   opacity: 0;
   transform: translateY(20px);
   animation: fadeUp 0.6s var(--ease-out) 0.2s forwards;
@@ -1504,12 +1504,13 @@ section[aria-label="Value propositions"]::before {
 @media (max-width: 639px) {
   .hero {
     padding: var(--space-2xl) var(--space-lg);
-    min-height: 60vh;
+    min-height: 100vh;
     justify-content: flex-start;
   }
 
   .hero__headline {
-    font-size: clamp(2.5rem, 10vw, 4rem);
+    font-size: clamp(1.75rem, 8vw, 2.5rem);
+    font-weight: 300;
   }
 
   .hero__subheadline {
@@ -1779,7 +1780,7 @@ section[aria-label="Mentorship network"] img {
   h2 { font-size: calc(var(--text-3xl) * 1.2); }
 
   .hero__headline {
-    font-size: clamp(4.5rem, 8vw, 7rem);
+    font-size: clamp(2.5rem, 3.5vw, 3.75rem);
   }
 }
 
