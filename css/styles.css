@@ -1090,6 +1090,8 @@ h4 { font-size: var(--text-xl); }
   font-family: var(--font-display);
   font-size: var(--text-sm);
   font-weight: 600;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
   margin-bottom: var(--space-sm);
   color: var(--ccn-dark);
 }
@@ -1099,21 +1101,27 @@ h4 { font-size: var(--text-xl); }
 .form__textarea {
   width: 100%;
   padding: var(--space-md);
-  border: 2px solid #e5e7eb;
+  border: 2px solid var(--ccn-cyan);
   border-radius: var(--radius-sm);
   font-family: var(--font-body);
   font-size: var(--text-base);
-  color: var(--ccn-dark);
-  transition: border-color 0.2s ease, box-shadow 0.2s ease;
-  background: var(--ccn-white);
+  color: var(--ccn-white);
+  transition: border-color 0.2s ease, box-shadow 0.2s ease, background 0.2s ease;
+  background: var(--ccn-cyan);
+}
+
+.form__input::placeholder,
+.form__textarea::placeholder {
+  color: rgba(255, 255, 255, 0.6);
 }
 
 .form__input:focus,
 .form__select:focus,
 .form__textarea:focus {
   outline: none;
-  border-color: var(--ccn-cyan);
-  box-shadow: 0 0 0 3px rgba(41, 121, 235, 0.15);
+  border-color: var(--ccn-deep);
+  background: var(--ccn-deep);
+  box-shadow: 0 0 0 3px rgba(41, 121, 235, 0.25);
 }
 
 .form__input--error,
