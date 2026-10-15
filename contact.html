@@ -60,7 +60,7 @@
           <!-- Contact Form -->
           <div>
             <h2 class="mb-lg">Send us a message</h2>
-            <form id="contact-form" action="https://docs.google.com/forms/d/e/placeholder/formResponse" method="POST" novalidate>
+            <form id="contact-form" novalidate>
 
               <div class="form__group">
                 <label for="name" class="form__label">Name</label>
@@ -81,6 +81,7 @@
                   <option value="general">General Enquiry</option>
                   <option value="client">Client Application</option>
                   <option value="partnership">Partnership</option>
+                  <option value="recruiting">Joining CCN London</option>
                   <option value="other">Other</option>
                 </select>
                 <p class="form__error" id="subject-error">Please select a subject.</p>
@@ -93,6 +94,7 @@
               </div>
 
               <button type="submit" class="btn btn--primary btn--large" style="width: 100%;">Send Message</button>
+              <p class="form__status" id="form-status" role="status" aria-live="polite"></p>
             </form>
           </div>
 

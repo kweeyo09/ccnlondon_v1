@@ -618,6 +618,70 @@ h4 { font-size: var(--text-xl); }
 }
 
 /* ============================================================
+   UNIVERSITY LOGOS
+   ============================================================ */
+.universities {
+  padding: var(--space-2xl) 0;
+  background: var(--ccn-light);
+}
+
+.universities__heading {
+  text-align: center;
+  margin-bottom: var(--space-2xl);
+}
+
+.universities__grid {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  grid-template-columns: repeat(6, minmax(0, 1fr));
+  gap: var(--space-xl);
+  align-items: center;
+  justify-items: center;
+}
+
+.universities__item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 80px;
+  width: 100%;
+}
+
+.universities__logo {
+  height: 64px;
+  width: auto;
+  max-width: 100%;
+  object-fit: contain;
+}
+
+.universities__logo--wide {
+  height: 28px;
+}
+
+@media (max-width: 1024px) {
+  .universities__grid {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 600px) {
+  .universities__grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: var(--space-lg);
+  }
+
+  .universities__logo {
+    height: 52px;
+  }
+
+  .universities__logo--wide {
+    height: 20px;
+  }
+}
+
+/* ============================================================
    CTA BANNER
    ============================================================ */
 .cta-banner {
@@ -1005,6 +1069,10 @@ h4 { font-size: var(--text-xl); }
   border-color: var(--ccn-cyan);
 }
 
+.team-card--static {
+  cursor: default;
+}
+
 .team-card__photo {
   width: 100px;
   height: 100px;
@@ -1060,6 +1128,22 @@ h4 { font-size: var(--text-xl); }
 
 .team__grid--5col {
   grid-template-columns: repeat(5, 1fr);
+}
+
+.team__grid--centered {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.team__grid--centered .team-card {
+  flex: 0 1 210px;
+}
+
+@media (max-width: 639px) {
+  .team__grid--centered .team-card {
+    flex-basis: calc(50% - var(--space-lg) / 2);
+  }
 }
 
 .team-card__linkedin {
@@ -1183,6 +1267,36 @@ h4 { font-size: var(--text-xl); }
 .form__textarea {
   min-height: 150px;
   resize: vertical;
+}
+
+.form__status {
+  display: none;
+  margin-top: var(--space-md);
+  padding: var(--space-md);
+  font-size: var(--text-base);
+  border-left: 4px solid;
+}
+
+.form__status--success,
+.form__status--error {
+  display: block;
+}
+
+.form__status--success {
+  color: #1e7e44;
+  background: #e9f7ef;
+  border-color: #27ae60;
+}
+
+.form__status--error {
+  color: #a93226;
+  background: #fdecea;
+  border-color: #e74c3c;
+}
+
+.form__status a {
+  color: inherit;
+  text-decoration: underline;
 }
 
 /* ============================================================

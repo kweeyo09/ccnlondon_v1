@@ -55,8 +55,30 @@
     });
   });
 
-  // Validate on submit
+  // Each subject goes to the matching CCN inbox
+  const inboxes = {
+    general: 'ccnlondon2025@gmail.com',
+    client: 'ccnlondonclients@gmail.com',
+    partnership: 'ccnlondonexternal@gmail.com',
+    recruiting: 'ccnlondonrecruiting@gmail.com',
+    other: 'ccnlondon2025@gmail.com',
+  };
+
+  const status = form.querySelector('#form-status');
+
+  const showStatus = (to) => {
+    status.className = 'form__status form__status--success';
+    status.innerHTML = '';
+    status.append(
+      'Your email app should now open with your message ready to send. If nothing happened, email us directly at ',
+      Object.assign(document.createElement('a'), { href: `mailto:${to}`, textContent: to }),
+      '.'
+    );
+  };
+
+  // Validate on submit, then open the visitor's email app with the message filled in
   form.addEventListener('submit', (e) => {
+    e.preventDefault();
     let hasError = false;
 
     fields.forEach((field) => {
@@ -66,10 +88,21 @@
     });
 
     if (hasError) {
-      e.preventDefault();
       // Focus first invalid field
       const firstError = fields.find((f) => !f.validate(f.input.value));
       firstError?.input.focus();
+      return;
     }
+
+    const [name, email, subject, message] = fields.map((f) => f.input.value.trim());
+    const subjectLabel = form.querySelector('#subject').selectedOptions[0].textContent;
+    const to = inboxes[subject] || inboxes.general;
+
+    const mailSubject = `${subjectLabel} — ${name}`;
+    const mailBody = `${message}\n\n—\n${name}\n${email}`;
+
+    window.location.href =
+      `mailto:${to}?subject=${encodeURIComponent(mailSubject)}&body=${encodeURIComponent(mailBody)}`;
+    showStatus(to);
   });
 })();
